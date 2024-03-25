@@ -30,3 +30,27 @@ body {
     text-wrap: balance;
   }
 }
+
+// h1 has font of neue-haas and a size of 1 em by default and is left aligned in bottom left
+@layer components {
+  h1 {
+    @apply font-neue-haas;
+    @apply text-gray-100;
+    @apply text-4xl;
+    @apply text-left;
+    @apply bottom-0;
+    @apply left-0;
+  }
+}
+
+// h2 has font of sigurd and a size of 1 em by default and has text justified alignment in top left 
+@layer components {
+  h2 {
+    @apply font-sigurd;
+    @apply text-white;
+    @apply text-4xl;
+    @apply text-justify;
+    @apply top-0;
+    @apply left-0;
+  }
+}
