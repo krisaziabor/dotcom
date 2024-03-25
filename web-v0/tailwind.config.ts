@@ -8,8 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        'primary-gray': '#CFCFCF',
+      },
       fontFamily: {
         'Neue-Haas': ['neue-haas-grotesk-display', 'sans-serif'],
+        'Sigurd': ['sigurd', 'sans-serif'],
+        'Sigurd-Italic': ['sigurd', 'sans-serif', 'italic'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

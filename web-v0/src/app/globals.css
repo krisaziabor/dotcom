@@ -4,8 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,5 +28,34 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components {
+  main {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: flex-start; /* Align items at the start (left) */
+    padding: 1em; /* Add padding */
+    height: 100vh; /* Take full height of the viewport */
+    background-color: #000000; /* Background color */
+  }
+
+  h1 {
+    font-family: 'Neue-Haas', sans-serif; /* Use custom font family */
+    @apply text-gray-100;
+    @apply text-4xl;
+    @apply text-left;
+    margin: 0; /* Remove default margin */
+  }
+
+  h2 {
+    font-family: 'Sigurd', sans-serif, 'light'; /* Use custom font family */
+    left: 0px; /* Add some left margin */
+    @apply text-gray-100;
+    @apply text-4xl;
+    @apply text-justify;
+    margin-top: 1em; /* Remove default margin */
+    margin-bottom: 1em; /* Add some bottom margin */
   }
 }

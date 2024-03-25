@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react';
+import "./globals.css"
 
 function Time() {
   const [time, setTime] = React.useState('');
@@ -17,15 +18,28 @@ function Time() {
     return null;
   }
 
-  return <h1 style={{ fontSize: '4em'}}>{time}</h1>;
+  return <h1>{time}</h1>;
+}
+
+function Bio() {
+  return <h2>
+  Kris <em>Atteh</em> <em>Kojo</em> Aziabor is a software engineer, designer, and photographer.
+  <br></br>
+  Passionate to explore the intentional creation and concessions of institutional memory, Aziabor is also devoted to playing with minimalistic aesthetics alongside thought-provoking words and visuals.
+  <br></br >He currently attends Yale University and is an incoming Full-Stack Software Engineering Intern at Fidelity Investments. 
+  <br></br>While this website is under renovation, you can access his Linkedin, CV, and Github.
+  </h2>
 }
 
 export default function Home() {
   return (
-    <main className= "font-Neue-Haas text-gray-600" style={{ backgroundColor: '#000000', height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'flex-start', textAlign: 'left', padding: '1em' }}>
-      <h1 style={{ fontSize: '4em' }}>KAKA</h1>
-      <h1 style={{ fontSize: '4em' }}>⠠⠠⠅⠁⠅⠁</h1>
-      <h1 style={{ fontSize: '4em' }}>COMING SOON</h1>
+    <main>
+      <div className="columns-3">
+      <Bio />
+      </div>
+      <h1>KAKA</h1>
+      <h1>⠠⠠⠅⠁⠅⠁</h1>
+      <h1>COMING SOON</h1>
       <Time />
     </main>
   );
