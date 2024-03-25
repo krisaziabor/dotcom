@@ -18,7 +18,7 @@ function Time() {
     return null;
   }
 
-  return <h1>{time}</h1>;
+  return <h1>{time} – NEW HAVEN </h1>;
 }
 
 function Bio() {
@@ -34,13 +34,9 @@ function Bio() {
 export default function Home() {
   return (
     <main>
-      <div className="columns-3">
-      <Bio />
-      </div>
-      <h1>KAKA</h1>
-      <h1>⠠⠠⠅⠁⠅⠁</h1>
-      <h1>COMING SOON</h1>
-      <Time />
+      <h1>⠠⠠⠅⠁⠅⠁
+      <br></br>
+      COMING SOON</h1>
     </main>
   );
 }
