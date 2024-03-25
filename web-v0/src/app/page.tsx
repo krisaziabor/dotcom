@@ -2,6 +2,7 @@
 
 import React from 'react';
 import "./globals.css"
+import { EyeClosedIcon, EyeOpenIcon, ArrowTopRightIcon } from '@radix-ui/react-icons';
 
 function Time() {
   const [time, setTime] = React.useState('');
@@ -37,6 +38,9 @@ export default function Home() {
       <h1>⠠⠠⠅⠁⠅⠁
       <br></br>
       COMING SOON</h1>
+      <div className="icon icon-bottom-right">
+        <EyeClosedIcon />
+      </div>
     </main>
   );
 }

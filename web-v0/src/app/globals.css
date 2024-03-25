@@ -62,3 +62,9 @@ body {
     margin-bottom: 1em; /* Add some bottom margin */
   }
 }
+
+.icon-bottom-right {
+  @apply absolute bottom-4 right-4;
+  color: #EEE5D9;
+  transform: scale(1.5);
+}
