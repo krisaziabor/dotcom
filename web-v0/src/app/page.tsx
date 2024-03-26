@@ -22,6 +22,15 @@ function Time() {
   return `${time} – NEW HAVEN`;
 }
 
+function BL() {
+  return <h1>⠠⠠⠅⠁⠅⠁
+  <br></br>
+  COMING SOON
+  <br></br>
+  {Time()}</h1>
+}
+
+
 function Bio() {
   return <h2>
   Kris <em>Atteh</em> <em>Kojo</em> Aziabor is a software engineer, designer, and photographer.
@@ -35,11 +44,7 @@ function Bio() {
 export default function Home() {
   return (
     <main>
-      <h1>⠠⠠⠅⠁⠅⠁
-      <br></br>
-      COMING SOON
-      <br></br>
-      {Time()}</h1>
+      <BL />
       <div className="icon icon-bottom-right">
         <EyeClosedIcon />
       </div>
