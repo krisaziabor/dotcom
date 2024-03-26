@@ -49,7 +49,7 @@ body {
     @apply text-left;
     /* apply color: EEE5D9; */
     color: #EEE5D9;
-
+    line-height: 1.5; /* Set line height */
   }
 
   h2 {

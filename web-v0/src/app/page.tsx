@@ -19,7 +19,7 @@ function Time() {
     return null;
   }
 
-  return <h1>{time} – NEW HAVEN </h1>;
+  return `${time} – NEW HAVEN`;
 }
 
 function Bio() {
@@ -37,7 +37,9 @@ export default function Home() {
     <main>
       <h1>⠠⠠⠅⠁⠅⠁
       <br></br>
-      COMING SOON</h1>
+      COMING SOON
+      <br></br>
+      {Time()}</h1>
       <div className="icon icon-bottom-right">
         <EyeClosedIcon />
       </div>
