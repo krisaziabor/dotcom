@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react';
+import React, { useState } from 'react';
 import "./globals.css"
 import { EyeClosedIcon, EyeOpenIcon, ArrowTopRightIcon } from '@radix-ui/react-icons';
 
@@ -30,6 +30,22 @@ function BL() {
   {Time()}</h1>
 }
 
+function EyeToggle() {
+  const [open, setOpen] = useState(false);
+
+  const handleTrigger = () => {
+    setOpen(!open);
+  };
+
+  return (
+    <div>
+      <button onClick={handleTrigger}>
+        {open ? <EyeOpenIcon onClick={handleTrigger} /> : <EyeClosedIcon onClick={handleTrigger} />}
+      </button>
+    </div>
+  );
+}
+
 
 function Bio() {
   return <h2>
@@ -46,7 +62,7 @@ export default function Home() {
     <main>
       <BL />
       <div className="icon icon-bottom-right">
-        <EyeClosedIcon />
+        <EyeToggle />
       </div>
     </main>
   );
