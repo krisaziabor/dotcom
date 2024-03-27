@@ -38,7 +38,7 @@ function EyeToggle() {
   };
 
   return (
-    <div>
+    <div className="icon icon-bottom-right">
       <button onClick={handleTrigger}>
         {open ? <EyeOpenIcon onClick={handleTrigger} /> : <EyeClosedIcon onClick={handleTrigger} />}
       </button>
@@ -61,9 +61,7 @@ export default function Home() {
   return (
     <main>
       <BL />
-      <div className="icon icon-bottom-right">
-        <EyeToggle />
-      </div>
+      <EyeToggle />
     </main>
   );
 }
