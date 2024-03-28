@@ -22,23 +22,20 @@ function Time() {
   return `${time} – NEW HAVEN`;
 }
 
-function BL() {
-  return <h1>⠠⠠⠅⠁⠅⠁
-  <br></br>
-  COMING SOON
-  <br></br>
-  {Time()}</h1>
+function BL({ open }: { open: boolean}) {
+  return (
+     <h1 className={open ? 'h1-alt' : ''}>⠠⠠⠅⠁⠅⠁
+    <br></br>
+    COMING SOON
+    <br></br>
+    {Time()}
+    </h1>
+  );
 }
 
-function EyeToggle() {
-  const [open, setOpen] = useState(false);
-
-  const handleTrigger = () => {
-    setOpen(!open);
-  };
-
+function EyeToggle({ open, handleTrigger }: { open: boolean, handleTrigger: () => void }) {
   return (
-    <div className="icon icon-bottom-right">
+    <div className={open? 'icon icon-bottom-right-alt' : `icon icon-bottom-right`}>
       <button onClick={handleTrigger}>
         {open ? <EyeOpenIcon onClick={handleTrigger} /> : <EyeClosedIcon onClick={handleTrigger} />}
       </button>
@@ -58,10 +55,18 @@ function Bio() {
 }
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
+
+  const handleTrigger = () => {
+    setOpen(!open);
+  };
+
   return (
-    <main>
-      <BL />
-      <EyeToggle />
+    <main className={`${open ? 'on-color' : 'off-color'}`}>
+      <div>
+        <BL open={open}/>
+        <EyeToggle open={open} handleTrigger={handleTrigger} />
+      </div>
     </main>
   );
 }
