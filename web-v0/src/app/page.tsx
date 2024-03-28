@@ -24,12 +24,25 @@ function Time() {
 
 function BL({ open }: { open: boolean}) {
   return (
-     <h1 className={open ? 'h1-alt' : ''}>⠠⠠⠅⠁⠅⠁
-    <br></br>
-    COMING SOON
-    <br></br>
-    {Time()}
-    </h1>
+    open ? (
+      <h1 className='h1-alt'>KAKA
+      <br></br>
+      COMING SOON
+      <br></br>
+      {Time()}
+      </h1>
+    )
+    
+    :
+    
+    (
+      <h1>⠠⠠⠅⠁⠅⠁
+      <br></br>
+      COMING SOON
+      <br></br>
+      {Time()}
+      </h1>
+    )
   );
 }
 
