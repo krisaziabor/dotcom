@@ -42,7 +42,6 @@ body {
   }
 
   h1 {
-    font-family: 'Neue-Haas', sans-serif; /* Use custom font family */
     @apply absolute bottom-4 left-4;
     @apply text-4xl;
     @apply text-left;
@@ -52,7 +51,6 @@ body {
   }
 
   .h1-alt {
-    font-family: 'Neue-Haas', sans-serif; /* Use custom font family */
     @apply absolute bottom-4 left-4;
     @apply text-gray-100;
     @apply text-4xl;
