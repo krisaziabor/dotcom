@@ -4,13 +4,23 @@ import React, { useState } from 'react';
 import "./globals.css"
 import { EyeClosedIcon, EyeOpenIcon, ArrowTopRightIcon } from '@radix-ui/react-icons';
 
+function getESTTime() {
+  const date = new Date();
+  const offset = date.getTimezoneOffset();
+  const hours_Offset = offset / 60;
+  const est_Offset = -4; // this does consider daylight-savings time – may need to be adjusted in future
+  const est_hours = hours_Offset + est_Offset;
+  const estTime = new Date(date.getTime() + est_hours * 60 * 60 * 1000);
+  return estTime.toLocaleTimeString();
+}
+
 function Time() {
   const [time, setTime] = React.useState('');
 
   React.useEffect(() => {
-    setTime(new Date().toLocaleTimeString());
+    setTime(getESTTime());
     const interval = setInterval(() => {
-      setTime(new Date().toLocaleTimeString());
+      setTime(getESTTime());
     }, 1000);
     return () => clearInterval(interval);
   }, []);
