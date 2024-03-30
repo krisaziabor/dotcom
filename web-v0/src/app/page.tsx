@@ -76,6 +76,17 @@ function Bio() {
   </h2>
 }
 
+function Contact() {
+  return (
+    <div>
+      <h3>
+        FOR RESUME, PORTFOLIO, & OTHER INQUIRIES
+      </h3>
+      <ArrowTopRightIcon className="icon icon-top-right" />
+    </div>
+  );
+}
+
 export default function Home() {
   const [open, setOpen] = useState(false);
 
@@ -88,7 +99,7 @@ export default function Home() {
       <div>
         <BL open={open}/>
         <EyeToggle open={open} handleTrigger={handleTrigger} />
-        {open && <ArrowTopRightIcon className="icon icon-top-right" />}
+        {open && <Contact />}
       </div>
     </main>
   );

@@ -69,6 +69,15 @@ body {
     margin-top: 1em; /* Remove default margin */
     margin-bottom: 1em; /* Add some bottom margin */
   }
+
+  h3 {
+    @apply absolute top-4 right-4;
+    @apply text-2xl;
+    @apply text-right;
+    /* apply color: EEE5D9; */
+    color: #D03129;
+    line-height: 1.5; /* Set line height */
+  }
 }
 
 .icon-bottom-right {
@@ -97,3 +106,4 @@ body {
   color: #D03129;
   transform: scale(1.5);
 }
+
