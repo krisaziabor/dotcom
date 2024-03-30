@@ -91,3 +91,9 @@ body {
 .off-color {
   background-color: #000000;
 }
+
+.icon-top-right {
+  @apply absolute top-4 right-4;
+  color: #D03129;
+  transform: scale(1.5);
+}

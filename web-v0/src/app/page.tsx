@@ -66,7 +66,6 @@ function EyeToggle({ open, handleTrigger }: { open: boolean, handleTrigger: () =
   );
 }
 
-
 function Bio() {
   return <h2>
   Kris <em>Atteh</em> <em>Kojo</em> Aziabor is a software engineer, designer, and photographer.
@@ -89,6 +88,7 @@ export default function Home() {
       <div>
         <BL open={open}/>
         <EyeToggle open={open} handleTrigger={handleTrigger} />
+        {open && <ArrowTopRightIcon className="icon icon-top-right" />}
       </div>
     </main>
   );
