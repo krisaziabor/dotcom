@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import "./globals.css"
 import { EyeClosedIcon, EyeOpenIcon, ArrowTopRightIcon } from '@radix-ui/react-icons';
+import AlertDialogSet from './components/radix/alertdialog';
 
 function getESTTime() {
   const date = new Date();
@@ -85,7 +86,9 @@ function Contact() {
         PORTFOLIO, 
         <br></br>
         & OTHER INQUIRIES
-        <ArrowTopRightIcon className="icon icon-top-right" />
+        <div className="icon icon-top-right">
+          <AlertDialogSet />
+        </div>
       </h3>
     </div>
   );
