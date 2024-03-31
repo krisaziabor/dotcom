@@ -80,9 +80,13 @@ function Contact() {
   return (
     <div>
       <h3>
-        FOR RESUME, PORTFOLIO, & OTHER INQUIRIES
+        FOR RESUME, 
+        <br></br>
+        PORTFOLIO, 
+        <br></br>
+        & OTHER INQUIRIES
+        <ArrowTopRightIcon className="icon icon-top-right" />
       </h3>
-      <ArrowTopRightIcon className="icon icon-top-right" />
     </div>
   );
 }

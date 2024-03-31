@@ -71,9 +71,11 @@ body {
   }
 
   h3 {
+
     @apply absolute top-4 right-4;
+    @apply text-justify;
     @apply text-2xl;
-    @apply text-right;
+    @apply text-left;
     /* apply color: EEE5D9; */
     color: #D03129;
     line-height: 1.5; /* Set line height */
