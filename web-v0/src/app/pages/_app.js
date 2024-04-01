@@ -37,7 +37,7 @@ const neueMontreal = localFont({
 
 export default function App({ Component, pageProps }) {
     return (
-        <main className={neueMontreal.className}>
+        <main className={editorialNew.className}>
           <Component {...pageProps} />
         </main>
     )

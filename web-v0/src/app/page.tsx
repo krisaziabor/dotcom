@@ -4,6 +4,32 @@ import React, { useState } from 'react';
 import "./globals.css"
 import { EyeClosedIcon, EyeOpenIcon, ArrowTopRightIcon } from '@radix-ui/react-icons';
 import AlertDialogSet from './components/radix/alertdialog';
+import localFont from 'next/font/local'
+
+const editorialNew = localFont({
+    src: [
+        {
+            path: './fonts/editorial-new/woff2/PPEditorialNew-Regular.woff2',
+            weight: '400',
+            style: 'normal',
+        },
+        {
+            path: './fonts/editorial-new/woff2/PPEditorialNew-Italic.woff2',
+            weight: '400',
+            style: 'italic',
+        },
+        {
+            path: './fonts/editorial-new/woff2/PPEditorialNew-Bold.woff2',
+            weight: '700',
+            style: 'normal',
+        },
+        {
+            path: './fonts/editorial-new/woff2/PPEditorialNew-BoldItalic.woff2',
+            weight: '700',
+            style: 'italic',
+        },
+    ],
+})
 
 function getESTTime() {
   const date = new Date();
@@ -102,7 +128,7 @@ export default function Home() {
   };
 
   return (
-    <main className={`${open ? 'on-color' : 'off-color'}`}>
+    <main className={`${open ? 'on-color' : 'off-color'} ${editorialNew.className}`}>
       <div>
         <BL open={open}/>
         <EyeToggle open={open} handleTrigger={handleTrigger} />
