@@ -31,6 +31,16 @@ const editorialNew = localFont({
     ],
 })
 
+const neueMontreal = localFont({
+  src: [
+      {
+          path: './fonts/neue-montreal/woff2/PPNeueMontreal-Medium.woff2',
+          weight: '500',
+          style: 'normal',
+      },
+  ]
+})
+
 function getESTTime() {
   const date = new Date();
   const offset = date.getTimezoneOffset();
