@@ -66,13 +66,15 @@ body {
   }
 
   h2 {
-    font-family: 'Sigurd', sans-serif, 'light'; /* Use custom font family */
-    left: 0px; /* Add some left margin */
-    @apply text-gray-100;
-    @apply text-4xl;
+    @apply absolute top-4 left-4;
+    color: #D03129;
+    @apply text-3xl;
+    @apply text-right;
     @apply text-justify;
-    margin-top: 1em; /* Remove default margin */
     margin-bottom: 1em; /* Add some bottom margin */
+    width: 30%; /* Adjust this to the point you want the text to stop */
+    word-wrap: break-word; /* Break the word at the end of the line */
+    overflow-wrap: break-word; /* Break the word at the end of the line */
   }
 
   h3 {
