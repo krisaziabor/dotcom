@@ -8,23 +8,26 @@ function Bio() {
 
   return (
     <h2>
-      Kris 
-      <Collapsible.Root open={openAtteh} onOpenChange={setOpenAtteh}>
+      Kris
+      <span> </span>
+      <Collapsible.Root open={openAtteh} onOpenChange={setOpenAtteh} style={{display: 'inline'}}>
         <Collapsible.Trigger asChild>
           <em onClick={() => setOpenAtteh(!openAtteh)}>Atteh</em>
         </Collapsible.Trigger>
-        <Collapsible.Content>
-          <h2>Test One</h2>
+        <Collapsible.Content asChild>
+          <span><em> – first born of twins – </em></span>
         </Collapsible.Content>
       </Collapsible.Root>
-      <Collapsible.Root open={openKojo} onOpenChange={setOpenKojo}>
+      <span> </span>
+      <Collapsible.Root open={openKojo} onOpenChange={setOpenKojo} style={{display: 'inline'}}>
         <Collapsible.Trigger asChild>
           <em onClick={() => setOpenKojo(!openKojo)}>Kojo</em>
         </Collapsible.Trigger>
-        <Collapsible.Content>
-          <h2>Test Two</h2>
+        <Collapsible.Content asChild>
+          <span><em> – born on a Monday – </em></span>
         </Collapsible.Content>
       </Collapsible.Root>
+      <span> </span>
       Aziabor is a software engineer, designer, and photographer.
       <br></br>
       <br></br>
