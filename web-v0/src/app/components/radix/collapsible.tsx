@@ -37,7 +37,7 @@ function Bio() {
       He currently attends Yale University and is an incoming Full-Stack Software Engineering Intern at Fidelity Investments. 
       <br></br>
       <br></br>
-      While this website is under renovation, you can access his <em>Linkedin</em>, <em>CV</em>, and <em>Github</em>, and this portfolio's <em>Colophon</em>.
+    While this website is under renovation, you can access his <em><a href="https://www.linkedin.com/in/krisaziabor/">Linkedin</a></em>, <em><a href="https://read.cv/krisaziabor">CV</a></em>, and <em><a href="https://github.com/krisaziabor/">Github</a></em>, and this portfolio's <em>Colophon</em>.
     </h2>
   );
 }

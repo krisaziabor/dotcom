@@ -81,9 +81,10 @@ body {
   h3 {
 
     @apply absolute top-4 right-4;
+    width: 15%;
     @apply text-justify;
     @apply text-2xl;
-    @apply text-left;
+    
     /* apply color: EEE5D9; */
     color: #D03129;
     line-height: 1.5; /* Set line height */
@@ -112,9 +113,10 @@ body {
 }
 
 .icon-top-right {
-  @apply absolute top-4 right-4;
+  @apply relative;
   color: #D03129;
-  transform: scale(1.5);
+  transform: scale(2.5);
+  display: inline-block;
 }
 
 /* reset */

@@ -109,11 +109,9 @@ function Contact() {
     <div>
       <h3>
         FOR RESUME, 
-        <br></br>
         PORTFOLIO, 
-        <br></br>
         & OTHER INQUIRIES
-        <div className="icon icon-top-right">
+        <div className="icon icon-top-right" style={{display: 'inline'}}>
           <AlertDialogSet />
         </div>
       </h3>
