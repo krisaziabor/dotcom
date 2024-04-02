@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import "./globals.css"
 import { EyeClosedIcon, EyeOpenIcon, ArrowTopRightIcon } from '@radix-ui/react-icons';
 import AlertDialogSet from './components/radix/alertdialog';
+import Bio from './components/radix/collapsible'
 import localFont from 'next/font/local'
 
 const editorialNew = localFont({
@@ -101,21 +102,6 @@ function EyeToggle({ open, handleTrigger }: { open: boolean, handleTrigger: () =
       </button>
     </div>
   );
-}
-
-function Bio() {
-  return <h2>
-  Kris <em>Atteh</em> <em>Kojo</em> Aziabor is a software engineer, designer, and photographer.
-  <br></br>
-  <br></br>
-  Passionate to explore the intentional creations and destructions of institutional memory, Aziabor plays with minimalistic aesthetics when forming thought-provoking visuals. 
-  <br></br>
-  <br></br>
-  He currently attends Yale University and is an incoming Full-Stack Software Engineering Intern at Fidelity Investments. 
-  <br></br>
-  <br></br>
-  While this website is under renovation, you can access his <em>Linkedin</em>, <em>CV</em>, and <em>Github</em>, and this portfolio's <em>Colophon</em>.
-  </h2>
 }
 
 function Contact() {
