@@ -14,7 +14,7 @@ function Bio() {
         <Collapsible.Trigger asChild>
           <em onClick={() => setOpenAtteh(!openAtteh)}>Atteh</em>
         </Collapsible.Trigger>
-        <Collapsible.Content asChild>
+        <Collapsible.Content asChild className="etymology">
           <span><em> – first born of twins – </em></span>
         </Collapsible.Content>
       </Collapsible.Root>
@@ -23,7 +23,7 @@ function Bio() {
         <Collapsible.Trigger asChild>
           <em onClick={() => setOpenKojo(!openKojo)}>Kojo</em>
         </Collapsible.Trigger>
-        <Collapsible.Content asChild>
+        <Collapsible.Content asChild className="etymology">
           <span><em> – born on a Monday – </em></span>
         </Collapsible.Content>
       </Collapsible.Root>
