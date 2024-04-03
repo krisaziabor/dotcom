@@ -42,6 +42,26 @@ const neueMontreal = localFont({
   ]
 })
 
+const pangramSans = localFont({
+  src: [
+    {
+      path: './fonts/pangram-sans/woff2/PPPangramSans-Bold.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: './fonts/pangram-sans/woff2/PPPangramSans-CompactBold.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: './fonts/pangram-sans/woff2/PPPangramSans-CompactBoldItalic.woff2',
+      weight: '700',
+      style: 'italic',
+    },
+  ]
+})
+
 function getESTTime() {
   const date = new Date();
   const offset = date.getTimezoneOffset();
