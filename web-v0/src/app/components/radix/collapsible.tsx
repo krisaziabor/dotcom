@@ -15,7 +15,7 @@ function Bio() {
           <em onClick={() => setOpenAtteh(!openAtteh)}>Atteh</em>
         </Collapsible.Trigger>
         <Collapsible.Content asChild className="etymology">
-          <span><em> – first born of twins – </em></span>
+          <span><em> – first born boy of twins – </em></span>
         </Collapsible.Content>
       </Collapsible.Root>
       <span> </span>
