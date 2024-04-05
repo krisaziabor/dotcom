@@ -11,8 +11,10 @@ const AlertDialogSet = () => (
     <AlertDialog.Portal>
       <AlertDialog.Overlay className="AlertDialogOverlay" />
       <AlertDialog.Content className="AlertDialogContent">
-        <AlertDialog.Title className="AlertDialogTitle">Are you affiliated with Yale University?</AlertDialog.Title>
+        {/* insert title of alert dialog here */}
         <AlertDialog.Description className="AlertDialogDescription">
+            Are you affiliated with Yale University?
+            <br></br>
             If so, please select yes and use your @yale.edu email.
             <br></br>
             If not, send any inquiries to kris@krisaziabor.com – this helps ensure I get your message.
