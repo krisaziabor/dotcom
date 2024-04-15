@@ -6,8 +6,6 @@
 @import '@radix-ui/colors/red.css';
 @import '@radix-ui/colors/violet.css';
 
-// start of develop branch
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 0, 0, 0;
