@@ -93,8 +93,7 @@ function Time() {
 function BL({ open }: { open: boolean}) {
   return (
     open ? (
-      <h1 className='h1-alt'>KAKA
-      <br></br>
+      <h1 className='h1-alt'>
       COMING SOON
       <br></br>
       {Time()}

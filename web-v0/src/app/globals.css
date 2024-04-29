@@ -46,26 +46,37 @@ body {
   }
 
   h1 {
-    @apply absolute bottom-4 left-4;
+    @apply absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
     @apply text-4xl;
     @apply text-left;
-    /* apply color: EEE5D9; */
     color: #FEFDFD;
-    line-height: 1.5; /* Set line height */
+    line-height: 1.5;
+    margin-right: 1em; /* Add some right margin */
   }
 
   .h1-alt {
-    @apply absolute bottom-4 left-4;
+    @apply absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
     @apply text-gray-100;
     @apply text-4xl;
     @apply text-left;
     /* apply color: EEE5D9; */
     color: #D03129;
     line-height: 1.5; /* Set line height */
+    margin-right: 1em; /* Add some right margin */
   }
 
   h2 {
-    @apply absolute top-4 left-4;
+    @apply absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-left: 1em; /* Add some left margin */
     color: #D03129;
     @apply text-3xl;
     @apply text-right;
