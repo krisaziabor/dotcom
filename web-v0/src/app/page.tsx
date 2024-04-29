@@ -125,21 +125,6 @@ function EyeToggle({ open, handleTrigger }: { open: boolean, handleTrigger: () =
   );
 }
 
-// function Contact() {
-//   return (
-//     <div>
-//       <h3>
-//         FOR RESUME, 
-//         PORTFOLIO, 
-//         & OTHER INQUIRIES
-//         <div className="icon icon-top-right" style={{display: 'inline'}}>
-//           <AlertDialogSet />
-//         </div>
-//       </h3>
-//     </div>
-//   );
-// }
-
 export default function Home() {
   const [open, setOpen] = useState(false);
 
