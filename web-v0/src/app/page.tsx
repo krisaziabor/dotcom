@@ -105,8 +105,6 @@ function BL({ open }: { open: boolean}) {
     
     (
       <h1>
-        {/* ⠠⠠⠅⠁⠅⠁ */}
-      <br></br>
       COMING SOON
       <br></br>
       {Time()}
