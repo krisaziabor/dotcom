@@ -97,8 +97,6 @@ function BL({ open }: { open: boolean}) {
         COMING SOON
         <br></br>
         <div className="text-xl">
-          RESUME AVAILABLE UPON REQUEST
-          <br></br>
           COLOPHON
           <br></br>
           {Time()}
