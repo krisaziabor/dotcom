@@ -50,11 +50,11 @@ body {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    @apply text-4xl;
+    @apply text-2xl;
     @apply text-left;
     color: #FEFDFD;
     line-height: 1.5;
-    margin-right: 1em; /* Add some right margin */
+    margin-right: 3em; /* Add some right margin */
   }
 
   .h1-alt {
@@ -63,12 +63,12 @@ body {
     right: 0;
     transform: translateY(-50%);
     @apply text-gray-100;
-    @apply text-4xl;
+    @apply text-3xl;
     @apply text-left;
     /* apply color: EEE5D9; */
     color: #D03129;
-    line-height: 1.5; /* Set line height */
-    margin-right: 1em; /* Add some right margin */
+    line-height: 1.75; /* Set line height */
+    margin-right: 3em; /* Add some right margin */
   }
 
   h2 {
@@ -76,9 +76,9 @@ body {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    margin-left: 1em; /* Add some left margin */
+    margin-left: 3em; /* Add some left margin */
     color: #D03129;
-    @apply text-3xl;
+    @apply text-2xl;
     @apply text-right;
     @apply text-justify;
     margin-bottom: 1em; /* Add some bottom margin */

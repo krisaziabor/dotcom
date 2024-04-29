@@ -94,9 +94,15 @@ function BL({ open }: { open: boolean}) {
   return (
     open ? (
       <h1 className='h1-alt'>
-      COMING SOON
-      <br></br>
-      {Time()}
+        COMING SOON
+        <br></br>
+        <div className="text-xl">
+          RESUME AVAILABLE UPON REQUEST
+          <br></br>
+          COLOPHON
+          <br></br>
+          {Time()}
+        </div>
       </h1>
     )
     
@@ -105,8 +111,6 @@ function BL({ open }: { open: boolean}) {
     (
       <h1>
       COMING SOON
-      <br></br>
-      {Time()}
       </h1>
     )
   );
