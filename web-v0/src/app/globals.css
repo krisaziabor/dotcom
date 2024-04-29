@@ -42,7 +42,7 @@ body {
     align-items: flex-start; /* Align items at the start (left) */
     padding: 1em; /* Add padding */
     height: 100vh; /* Take full height of the viewport */
-    background-color: #000000; /* Background color */
+    background-color: #D03129; /* Background color */
   }
 
   h1 {
@@ -50,7 +50,7 @@ body {
     @apply text-4xl;
     @apply text-left;
     /* apply color: EEE5D9; */
-    color: #EEE5D9;
+    color: #FEFDFD;
     line-height: 1.5; /* Set line height */
   }
 
@@ -91,7 +91,7 @@ body {
 
 .icon-bottom-right {
   @apply absolute bottom-4 right-4;
-  color: #EEE5D9;
+  color: #FEFDFD;
   transform: scale(1.5);
 }
 
@@ -103,11 +103,11 @@ body {
 }
 
 .on-color {
-  background-color: #EEE5D9;
+  background-color: #FEFDFD;
 }
 
 .off-color {
-  background-color: #000000;
+  background-color: #D03129;
 }
 
 .icon-top-right {

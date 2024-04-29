@@ -104,7 +104,8 @@ function BL({ open }: { open: boolean}) {
     :
     
     (
-      <h1>⠠⠠⠅⠁⠅⠁
+      <h1>
+        {/* ⠠⠠⠅⠁⠅⠁ */}
       <br></br>
       COMING SOON
       <br></br>
@@ -124,20 +125,20 @@ function EyeToggle({ open, handleTrigger }: { open: boolean, handleTrigger: () =
   );
 }
 
-function Contact() {
-  return (
-    <div>
-      <h3>
-        FOR RESUME, 
-        PORTFOLIO, 
-        & OTHER INQUIRIES
-        <div className="icon icon-top-right" style={{display: 'inline'}}>
-          <AlertDialogSet />
-        </div>
-      </h3>
-    </div>
-  );
-}
+// function Contact() {
+//   return (
+//     <div>
+//       <h3>
+//         FOR RESUME, 
+//         PORTFOLIO, 
+//         & OTHER INQUIRIES
+//         <div className="icon icon-top-right" style={{display: 'inline'}}>
+//           <AlertDialogSet />
+//         </div>
+//       </h3>
+//     </div>
+//   );
+// }
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -149,9 +150,11 @@ export default function Home() {
   return (
     <main className={`${open ? 'on-color' : 'off-color'} ${editorialNew.className}`}>
       <div>
-        <BL open={open}/>
+        <div className={`${pangramSans.className}`}>
+          <BL open={open}/>
+        </div>
         <EyeToggle open={open} handleTrigger={handleTrigger} />
-        {open && <Contact />}
+        {/* {open && <Contact />} */}
         {open && <Bio />}
       </div>
     </main>
