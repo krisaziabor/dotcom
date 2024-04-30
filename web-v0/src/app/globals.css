@@ -50,7 +50,7 @@ body {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    @apply text-2xl;
+    @apply text-3xl;
     @apply text-left;
     color: #FEFDFD;
     line-height: 1.5;
@@ -69,6 +69,15 @@ body {
     color: #D03129;
     line-height: 1.75; /* Set line height */
     margin-right: 3em; /* Add some right margin */
+  }
+
+  .h1-blind {
+    @apply text-xl;
+    color: #D03129;
+    -webkit-user-select: none;  
+    -moz-user-select: none;   
+    -ms-user-select: none;      
+    user-select: none;          
   }
 
   h2 {
@@ -100,17 +109,19 @@ body {
   }
 }
 
+.icon-bottom-right, .icon-bottom-right-alt {
+  position: absolute;
+  top: 57.5%;
+  right: 17.2%;
+  transform: translateY(-50%) scale(1.5);
+}
+
 .icon-bottom-right {
-  @apply absolute bottom-4 right-4;
   color: #FEFDFD;
-  transform: scale(1.5);
 }
 
 .icon-bottom-right-alt {
-  @apply absolute bottom-4 right-4;
   color: #D03129;
-  transform: scale(1.5);
-
 }
 
 .on-color {
