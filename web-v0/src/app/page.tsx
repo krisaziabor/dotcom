@@ -90,51 +90,90 @@ function Time() {
   return `${time} – NEW HAVEN`;
 }
 
-function BL({ open }: { open: boolean}) {
-  return (
-    open ? (
-      <h1 className='h1-alt'>KAKA
-      <br></br>
-      COMING SOON
-      <br></br>
-      {Time()}
-      </h1>
-    )
+// function BL({ open }: { open: boolean}) {
+//   return (
+//     open ? (
+//       <h1 className='h1-alt'>
+//         COMING SOON
+//         <br></br>
+//         <div className="text-xl">
+//           COLOPHON
+//           <br></br>
+//           {Time()}
+//         </div>
+//       </h1>
+//     )
     
-    :
+//     :
     
-    (
-      <h1>⠠⠠⠅⠁⠅⠁
-      <br></br>
-      COMING SOON
-      <br></br>
-      {Time()}
-      </h1>
-    )
-  );
-}
+//     (
+//       <h1>
+//       COMING SOON
+//       </h1>
+//     )
+//   );
+// }
 
-function EyeToggle({ open, handleTrigger }: { open: boolean, handleTrigger: () => void }) {
-  return (
-    <div className={open? 'icon icon-bottom-right-alt' : `icon icon-bottom-right`}>
-      <button onClick={handleTrigger}>
-        {open ? <EyeOpenIcon onClick={handleTrigger} /> : <EyeClosedIcon onClick={handleTrigger} />}
-      </button>
-    </div>
-  );
-}
+// function EyeToggle({ open, handleTrigger }: { open: boolean, handleTrigger: () => void }) {
+//   return (
+//     <div className={open? 'icon icon-bottom-right-alt' : `icon icon-bottom-right`}>
+//       <button onClick={handleTrigger}>
+//         {open ? <EyeOpenIcon onClick={handleTrigger} /> : <EyeClosedIcon onClick={handleTrigger} />}
+//       </button>
+//     </div>
+//   );
+// }
 
-function Contact() {
+// export default function Home() {
+//   const [open, setOpen] = useState(false);
+
+//   const handleTrigger = () => {
+//     setOpen(!open);
+//   };
+
+//   return (
+//     <main className={`${open ? 'on-color' : 'off-color'} ${editorialNew.className}`}>
+//       <div>
+//         <div className={`${pangramSans.className}`}>
+//           <BL open={open}/>
+//         </div>
+//         <EyeToggle open={open} handleTrigger={handleTrigger} />
+//         {/* {open && <Contact />} */}
+//         {open && <Bio />}
+//       </div>
+//     </main>
+//   );
+// }
+
+function BL({ open, handleTrigger }: { open: boolean, handleTrigger: () => void }) {
   return (
     <div>
-      <h3>
-        FOR RESUME, 
-        PORTFOLIO, 
-        & OTHER INQUIRIES
-        <div className="icon icon-top-right" style={{display: 'inline'}}>
-          <AlertDialogSet />
-        </div>
-      </h3>
+      {open ? (
+        <h1 className='h1-alt'>
+          COMING SOON
+          <br></br>
+          <div className="text-xl">
+            COLOPHON
+            <br></br>
+            {Time()}
+          </div>
+        </h1>
+      ) : (
+        <h1>
+          COMING SOON
+          <br></br>
+          <div className="h1-blind">
+            COLOPHON
+            <br></br>
+            {Time()}
+          </div>
+        </h1>
+      )}
+      <div className={open? 'icon icon-bottom-right-alt' : `icon icon-bottom-right`}>
+        <button onClick={handleTrigger}>
+          {open ? <EyeOpenIcon /> : <EyeClosedIcon />}
+        </button>
+      </div>
     </div>
   );
 }
@@ -149,9 +188,9 @@ export default function Home() {
   return (
     <main className={`${open ? 'on-color' : 'off-color'} ${editorialNew.className}`}>
       <div>
-        <BL open={open}/>
-        <EyeToggle open={open} handleTrigger={handleTrigger} />
-        {open && <Contact />}
+        <div className={`${pangramSans.className}`}>
+          <BL open={open} handleTrigger={handleTrigger}/>
+        </div>
         {open && <Bio />}
       </div>
     </main>
