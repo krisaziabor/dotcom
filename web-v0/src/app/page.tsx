@@ -59,6 +59,16 @@ const pangramSans = localFont({
       weight: '700',
       style: 'italic',
     },
+    {
+      path: './fonts/pangram-sans/woff2/PPPangramSans-Semibold.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: './fonts/pangram-sans/woff2/PPPangramSans-Medium.woff2',
+      weight: '500',
+      style: 'normal',      
+    }
   ]
 })
 
