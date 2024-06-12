@@ -87,7 +87,8 @@ function Time() {
     return null;
   }
 
-  return `${time} – NEW HAVEN`;
+  // return `${time} – NEW HAVEN, CT & MERRIMACK, NH`;
+  return `${time} – EST`;
 }
 
 // function BL({ open }: { open: boolean}) {
