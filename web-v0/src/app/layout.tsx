@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Kristopher Aziabor",
   description: "Coming Soon",
+  
 };
 
 export default function RootLayout({
