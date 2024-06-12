@@ -34,7 +34,7 @@ function Bio() {
       Passionate to explore the intentional creations and destructions of institutional memory, Aziabor plays with minimalistic aesthetics when forming thought-provoking visuals. 
       <br></br>
       <br></br>
-      He currently attends Yale University and is an incoming Full-Stack Software Engineering Intern at Fidelity Investments. 
+      He currently attends Yale University and is a Full-Stack Software Engineering Intern at Fidelity Investments. 
       <br></br>
       <br></br>
     While this website is <div style={{ textDecoration: 'underline', display: 'inline'}}>under renovation</div>, you can access his <em><a href="https://www.linkedin.com/in/krisaziabor/">Linkedin</a></em>, <em><a href="https://read.cv/krisaziabor">CV</a></em>, and <em><a href="https://github.com/krisaziabor/">Github</a></em>.
