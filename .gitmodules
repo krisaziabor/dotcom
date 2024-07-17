@@ -1,0 +1,3 @@
+[submodule "web-v0"]
+	path = web-v0
+	url = https://github.com/krisaziabor/web-v0.git
