@@ -96,65 +96,9 @@ function Time() {
   if (time === '') {
     return null;
   }
-
-  // return `${time} – NEW HAVEN, CT & MERRIMACK, NH`;
+  
   return `${time} – EST`;
 }
-
-// function BL({ open }: { open: boolean}) {
-//   return (
-//     open ? (
-//       <h1 className='h1-alt'>
-//         COMING SOON
-//         <br></br>
-//         <div className="text-xl">
-//           COLOPHON
-//           <br></br>
-//           {Time()}
-//         </div>
-//       </h1>
-//     )
-    
-//     :
-    
-//     (
-//       <h1>
-//       COMING SOON
-//       </h1>
-//     )
-//   );
-// }
-
-// function EyeToggle({ open, handleTrigger }: { open: boolean, handleTrigger: () => void }) {
-//   return (
-//     <div className={open? 'icon icon-bottom-right-alt' : `icon icon-bottom-right`}>
-//       <button onClick={handleTrigger}>
-//         {open ? <EyeOpenIcon onClick={handleTrigger} /> : <EyeClosedIcon onClick={handleTrigger} />}
-//       </button>
-//     </div>
-//   );
-// }
-
-// export default function Home() {
-//   const [open, setOpen] = useState(false);
-
-//   const handleTrigger = () => {
-//     setOpen(!open);
-//   };
-
-//   return (
-//     <main className={`${open ? 'on-color' : 'off-color'} ${editorialNew.className}`}>
-//       <div>
-//         <div className={`${pangramSans.className}`}>
-//           <BL open={open}/>
-//         </div>
-//         <EyeToggle open={open} handleTrigger={handleTrigger} />
-//         {/* {open && <Contact />} */}
-//         {open && <Bio />}
-//       </div>
-//     </main>
-//   );
-// }
 
 function BL({ open, handleTrigger }: { open: boolean, handleTrigger: () => void }) {
   return (
@@ -163,21 +107,11 @@ function BL({ open, handleTrigger }: { open: boolean, handleTrigger: () => void 
         <h1 className='h1-alt'>
           COMING SOON
           <br></br>
-          <div className="text-xl">
-            COLOPHON
-            <br></br>
-            {Time()}
-          </div>
         </h1>
       ) : (
         <h1>
           COMING SOON
           <br></br>
-          <div className="h1-blind">
-            COLOPHON
-            <br></br>
-            {Time()}
-          </div>
         </h1>
       )}
       <div className={open? 'icon icon-bottom-right-alt' : `icon icon-bottom-right`}>
