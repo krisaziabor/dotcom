@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import "./globals.css"
 import { EyeClosedIcon, EyeOpenIcon, ArrowTopRightIcon } from '@radix-ui/react-icons';
-import AlertDialogSet from './components/radix/alertdialog';
 import Bio from './components/radix/collapsible'
 import localFont from 'next/font/local'
 
@@ -96,7 +95,7 @@ function Time() {
   if (time === '') {
     return null;
   }
-  
+
   return `${time} – EST`;
 }
 
